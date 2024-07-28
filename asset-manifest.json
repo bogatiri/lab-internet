@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/lab-internet/static/css/main.1e38c28f.css",
-    "main.js": "/lab-internet/static/js/main.36e4095a.js",
+    "main.js": "/lab-internet/static/js/main.ac77300c.js",
     "static/media/Header-bg.png": "/lab-internet/static/media/Header-bg.651e4703788e472a4a42.png",
     "static/media/2_1.png": "/lab-internet/static/media/2_1.b8451b9cb75c464741a1.png",
     "static/media/2_2.png": "/lab-internet/static/media/2_2.db726b2891dd31f1a6cc.png",
     "index.html": "/lab-internet/index.html",
     "main.1e38c28f.css.map": "/lab-internet/static/css/main.1e38c28f.css.map",
-    "main.36e4095a.js.map": "/lab-internet/static/js/main.36e4095a.js.map"
+    "main.ac77300c.js.map": "/lab-internet/static/js/main.ac77300c.js.map"
   },
   "entrypoints": [
     "static/css/main.1e38c28f.css",
-    "static/js/main.36e4095a.js"
+    "static/js/main.ac77300c.js"
   ]
 }
