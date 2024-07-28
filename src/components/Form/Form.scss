@@ -1,0 +1,105 @@
+.form{
+	max-width: 800px;
+	margin: 5rem auto;
+	height: auto;
+	width: 100%;
+	max-width: 50rem;
+
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.title{
+		font-size: 40px;
+		font-weigth: 600;
+		line-height: 56px;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 44px;
+
+		@media (max-width: 375px) {
+			font-size: 24px;
+			font-weigth: 600;
+			line-height: 32px;
+		}
+
+	}
+
+	.form-group {
+		max-height: 258px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+		@media (max-width: 768px) {
+			padding-left: 1.25rem;
+			paddong-right: 1.25rem;
+		}
+
+		@media (max-width: 375px) {
+			grid-template-columns: repeat(1, 1fr);
+			max-height: 342px;
+			padding-left: 1rem;
+			paddong-right: 1rem;
+		}
+	
+		.button{
+			height: 4rem;
+			border-radius: 4px;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 24px;
+		}
+
+  }
+
+  .input-wrapper {
+    position: relative;
+
+
+    .ant-input {
+      padding-right: 40px;
+			height: 4rem;
+			border-radius: 4px;
+			font-size: 18px;
+			line-height: 24px; 
+    }
+
+    .error-message {
+      color: red;
+      font-size: 12px;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    &.ant-input-affix-wrapper-status-error {
+      border-color: red;
+    }
+  }
+
+  .ant-input-suffix {
+    display: flex;
+    align-items: center;
+  }
+
+  .suffix-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+		font-size: 20px;
+  }
+
+	.checkbox{
+		display: flex;
+		align-items: start;
+		justify-content: start;
+		font-size: 1rem;
+	}
+}

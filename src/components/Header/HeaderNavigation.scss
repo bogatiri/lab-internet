@@ -1,0 +1,130 @@
+.header-navigation {
+	height: 80px;
+	padding-top: 26px;
+	padding-bottom: 26px;
+	display: flex;
+	justify-content: space-around;
+	align-items: items-center;
+	z-index: 2;
+
+	@media (max-width: 769px) {
+		justify-content: space-between;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.testLab {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 120px;
+		z-index: 3;
+
+		.logo {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.circle {
+				width: 1.5rem;
+				height: 1.5rem;
+				border-radius: 50%;
+			}
+
+			.circleLeft {
+				position: absolute;
+				right: 50%;
+				background-color: rgba(42, 108, 234, 1);
+				z-index: 1;
+			}
+
+			.circleRight {
+				left: 50%;
+				transform: translateX(-50%);
+				position: absolute;
+				background-color: rgba(236, 239, 242, 1);
+			}
+		}
+
+		h5 {
+			margin: 0;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 24px;
+			color: white;
+			z-index: 3;
+		}
+	}
+
+	.navigation {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+		width: 464px;
+		box-sizing: border-box;
+
+		@media (max-width: 769px) {
+			display: none;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			color: white;
+			cursor: pointer;
+			transition: text-decoration 0.3s ease, color 0.3s ease;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.mobile-navigation {
+		font-size: 22px;
+		color: white;
+		cursor: pointer;
+
+		@media (max-width: 769px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		@media (min-width: 769px) {
+			display: none;
+		}
+	}
+
+	.overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: white;
+		padding-top: 5rem;
+		z-index: 1;
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+		pointer-events: none;
+
+		&.active {
+			opacity: 1;
+			pointer-events: all;
+		}
+
+		.mobile-menu {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			font-size: 18px;
+			padding: 16px;
+			border-top: 1px solid rgba(236, 239, 242, 1);
+			line-height: 32px;
+			color: rgba(131, 137, 143, 1);
+			cursor: pointer;
+		}
+	}
+}
